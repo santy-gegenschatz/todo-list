@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What day is it</title>
+</head>
+<body>
+    <h1> Today is <%= kindOfDay %> !</h1>
+    <ul>
+        <li> Code </li>
+        <li> Talk to users </li>
+        <li> Hang out with friends</li>
+        <% for (let i = 0; i < newTasks.length; i++) { %>
+             <li> <%= newTasks[i] %></li>
+          <% } %>
+    </ul>
+    <form action="/" method = "post">
+        <label for="new_task"></label>
+        <input type="text" name = "todoItem" id = "new-task">
+        <button type = "submit"> Create a new Task</button>
+    </form>
+</body>
+</html>
