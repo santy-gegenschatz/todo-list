@@ -9,9 +9,6 @@
 <body>
     <h1> Today is <%= kindOfDay %> !</h1>
     <ul>
-        <li> Code </li>
-        <li> Talk to users </li>
-        <li> Hang out with friends</li>
         <% for (let i = 0; i < newTasks.length; i++) { %>
              <li> <%= newTasks[i] %></li>
           <% } %>

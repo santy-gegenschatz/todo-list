@@ -5,7 +5,7 @@ const port = 3000;
 
 
 const app = express();
-let items = [];
+let items = ["Write Code", "Write more Code", "Learn C++"];
 let item;
 
 app.use(bodyParser.urlencoded({extended : true}));
